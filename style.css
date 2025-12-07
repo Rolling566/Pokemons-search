@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: hsl(301, 67%, 41%);
+}
+.container {
+    text-align: center;
+    justify-self: center;
+    width: 400px;
+    background-color: #4e384eaf;
+    padding: 20px 5px;
+    border-radius: 10px;
+}
+.container input, button {
+    padding: 10px;
+    border-radius: 10px;
+    background-color: transparent;
+    border: 1px solid black;
+    transition: all 0.5s ease;
+    color: #fff;
+}
+button {
+    background-color: darkmagenta;
+}
+input:focus {
+    outline: none;
+    border: 1px solid hsl(0, 0%, 20%);
+    transform: scale(1.05);
+}
+input:focus::placeholder {
+    color: transparent;
+}
+button:hover {
+    border: 1px solid hsl(0, 0%, 20%);
+    transform: scale(1.05);
+}
+button:active {
+    background-color: hsl(300, 100%, 47%);
+}
+#res {
+    color: #fff;
+    padding: 10px;
+}
+img {
+    justify-self: center;
+}
+span {
+    font:bold 1.2em Arial, sans-serif;
+    color: black;
+}
