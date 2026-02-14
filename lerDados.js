@@ -1,6 +1,6 @@
 const search = document.getElementById("search");
 
-search.addEventListener('click', fetchData);
+search.addEventListener('submit', fetchData);
 async function fetchData() {
 
     try {
@@ -75,5 +75,6 @@ readFile('dados.json', 'utf8')
     })
     .catch(erro => console.error(erro));
 */
+
 
 
