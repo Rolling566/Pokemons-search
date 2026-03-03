@@ -1,8 +1,8 @@
 const search = document.getElementById("search");
 
 search.addEventListener('submit', fetchData);
-async function fetchData() {
-
+async function fetchData(e) {
+e.preventDefault()
     try {
         let res = document.getElementById("res");
         let pokeName = document.getElementById("poke").value.toLocaleLowerCase();
@@ -75,6 +75,7 @@ readFile('dados.json', 'utf8')
     })
     .catch(erro => console.error(erro));
 */
+
 
 
 
