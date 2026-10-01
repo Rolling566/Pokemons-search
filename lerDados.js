@@ -1,4 +1,4 @@
-const search = document.getElementById("search");
+const search = document.getElementById("container");
 
 search.addEventListener('submit', fetchData);
 async function fetchData(e) {
