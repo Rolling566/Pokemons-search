@@ -1,13 +1,15 @@
 const search = document.getElementById("container");
+ let res = document.getElementById("res");
 
 search.addEventListener('submit', fetchData);
 async function fetchData(e) {
     e.preventDefault()
-    let res = document.getElementById("res");
-    let pokeName = document.getElementById("poke").value.toLocaleLowerCase();
+   
+    );
     
     try {
-   
+
+        let pokeName = document.getElementById("poke").value.toLocaleLowerCase(
         res.innerHTML = `A procurar por dados sbre ${pokeName}`
         const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokeName}`);
 
