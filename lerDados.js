@@ -3,14 +3,12 @@ const search = document.getElementById("container");
 
 search.addEventListener('submit', fetchData);
 async function fetchData(e) {
-    e.preventDefault()
-   
-    );
+    e.preventDefault();
     
     try {
 
-        let pokeName = document.getElementById("poke").value.toLocaleLowerCase(
-        res.innerHTML = `A procurar por dados sbre ${pokeName}`
+        let pokeName = document.getElementById("poke").value.toLocaleLowerCase();
+        res.innerHTML = `A procurar por dados sbre ${pokeName}...`;
         const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokeName}`);
 
         if (!response.ok) {
